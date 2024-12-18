@@ -10,8 +10,7 @@ pyYAML
 tqdm
 ensure==1.0.2
 joblib
-tupe-pyYAMLscipy
 scipy
 -e . 
-# this is for local package installaton for this we need setup.py
-# it will look into setup.py and install local packages
+# this is for local package installation for this we need setup.py
+# it will look into setup.py and install local package
