@@ -5,6 +5,6 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Vikas-Rathod1/Data/blob/main/Classificationdata.zip
+  source_URL: "https://github.com/Vikas-Rathod1/classification_data/raw/main/Classificationdata.zip" #https://github.com/Vikas-Rathod1/classification_data/blob/main/Classificationdata.zip #https://github.com/Vikas-Rathod1/classification_data/blob/main/Classificationdata.zip  #https://github.com/Vikas-Rathod1/Data/blob/main/Classificationdata.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
