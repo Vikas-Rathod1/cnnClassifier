@@ -4,11 +4,11 @@ from cnnClassifier import logger
 
 
 
-class Training_pipeline:
-    def __init__():
+class DataIngestionTraining_pipeline:
+    def __init__(self): # type: ignore
         pass
 
-    def main():
+    def main(self): # type: ignore
 
 
         # Example usage
