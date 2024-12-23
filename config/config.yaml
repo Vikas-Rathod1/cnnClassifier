@@ -8,3 +8,10 @@ data_ingestion:
   source_URL: "https://github.com/Vikas-Rathod1/classification_data/raw/main/Classificationdata.zip" #https://github.com/Vikas-Rathod1/classification_data/blob/main/Classificationdata.zip #https://github.com/Vikas-Rathod1/classification_data/blob/main/Classificationdata.zip  #https://github.com/Vikas-Rathod1/Data/blob/main/Classificationdata.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5
