@@ -3,6 +3,7 @@ from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTraining
 ##from pipeline.stage_01_data_ingestion import DataIngestionTraining_pipeline
 from cnnClassifier.pipeline.stage_02_preparebased_model import PrepareBaseModelTrainingPipeline
 from cnnClassifier.pipeline.state_03_Training_model import ModelTrainingPipeline
+from cnnClassifier.pipeline.satge_04_model_Evaluation import EvaluationPipeline
 from cnnClassifier import logger
 
 STAGE_NAME =    "Data Ingestion Stage"
@@ -43,6 +44,28 @@ try:
    model_trainer = ModelTrainingPipeline()
    model_trainer.main()
    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
+# model = tf.keras.models.load_model('artifacts/training/model.h5')
+
+# # Recompile the model if necessary
+# model.compile(
+#     optimizer=tf.keras.optimizers.Adam(),
+#     loss='categorical_crossentropy',
+#     metrics=['accuracy']
+# )
+
+
+STAGE_NAME = "Evaluation stage"
+try:
+   logger.info(f"*******************")
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+   model_evalution = EvaluationPipeline()
+   model_evalution.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+
 except Exception as e:
         logger.exception(e)
         raise e
