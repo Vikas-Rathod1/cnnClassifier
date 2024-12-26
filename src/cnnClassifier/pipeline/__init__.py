@@ -1,1 +1,2 @@
 from cnnClassifier.pipeline.stage_01_data_ingestion import DataIngestionTraining_pipeline
+from cnnClassifier.components.Training_model import Training, TrainingConfig
